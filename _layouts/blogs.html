@@ -1,7 +1,7 @@
 ---
 layout: frame
 ---
-<ul class="entry-list">
+<ul class="blog-entry-list">
 {% for entry in site.categories[page.cur_category] %}
     <li>
         <div><span class="entry-date">{{ entry.date | date:"%Y-%m-%d"}}</span> &raquo;<a class="entry-title" href="{{ entry.url }}">{{ entry.title }}</a></div>
