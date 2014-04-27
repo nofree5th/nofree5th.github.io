@@ -1,0 +1,11 @@
+---
+layout: frame
+---
+<ul class="entry-list">
+{% for entry in site.categories[page.cur_category] %}
+    <li>
+        <div><span class="entry-date">{{ entry.date | date:"%Y-%m-%d"}}</span> &raquo;<a class="entry-title" href="{{ entry.url }}">{{ entry.title }}</a></div>
+        <i class="entry-desc">{{ entry.content | strip_html | truncate: site.desc_count }} <a class="see-more" href="{{ entry.url }}">...全文阅读<span class="glyphicon glyphicon-arrow-right"></span></a></i>
+    </li>
+{% endfor %}
+</ul>

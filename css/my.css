@@ -1,0 +1,30 @@
+body {
+    background-color: #e8e8e8;
+    font-family: "微软雅黑","Arial","Helvetica","sans-serif";
+}
+#content {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    min-height: 200px;
+}
+
+.entry-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.haha-entry-list .entry-title {
+    text-align: left;
+}
+
+.entry-date {
+    text-align: center;
+    color: #999;
+    margin-bottom: 20px;
+}
+.see-more {
+    margin-left: 10px;
+}
