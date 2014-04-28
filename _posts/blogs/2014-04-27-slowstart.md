@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 本站的起源
-category: blog.default
+category: blog
 ---
 
 ##搭建Jekyll环境
