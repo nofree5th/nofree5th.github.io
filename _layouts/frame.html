@@ -32,11 +32,13 @@
     <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
+{% if site.host != "0.0.0.0" %}
 <!-- begin baidu stat -->
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd6c5818804988db84621ed388c637338' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <!-- end baidu stat -->
+{% endif %}
 </body>
 </html>
