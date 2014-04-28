@@ -8,5 +8,4 @@ Welcome to here.
 [![Github](http://github.com/favicon.ico)](http://github.com/nofree5th)
 
     QQ: 307831078
-    Name: nofree
     Email: nofree5th@qq.com
