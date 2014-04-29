@@ -22,15 +22,18 @@
             <li{% if menu.id == page.cur_menu %} class="active" {% endif %}><a href="{{ site.baseurl }}{{ menu.url }}"><span>{{ menu.name }}</span></a></li>
         {% endfor %}
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ site.baseurl }}about.html">关于</a></li>
+          </ul>
         </nav>
       </div>
     </header>
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <div class="container" id="content">
         {{ content }}
     </div>
     <footer class="container text-center">Copyright &copy; 2014 - WhoCares</footer>
-    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
 {% if site.host != "0.0.0.0" %}
 <!-- begin baidu stat -->

@@ -1,0 +1,44 @@
+---
+layout: frame
+---
+<div class="haha-entry-list">
+{% for entry in site.categories[page.cur_category] %}
+    <div class="entry">
+        <div><span class="entry-date">{{ entry.date | date:"%Y-%m-%d"}}</span> &raquo; <span class="entry-title">{{ entry.title }}</span></div>
+        <div class="entry-content">{{ entry.content }}</div>
+    </div>
+{% endfor %}
+</div>
+<style>
+.haha-entry-list .entry {
+    width: 30%; 
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
+</style>
+<script src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
+<script>
+$(function(){
+    var $container = $(".haha-entry-list");
+    $container.masonry({
+         itemSelector: '.entry'
+        });
+   var rgba = [
+        'rgba(251,34,240,0.25)'
+        ,'rgba(214,17,21,0.25)'
+        ,'rgba(14,251,252,0.25)'
+        ,'rgba(158,134,255,0.25)'
+        ,'rgba(60,255,20,0.25)'
+        ,'rgba(44,158,52,0.25)'
+        ,'rgba(225,211,20,0.25)'
+        ,'rgba(100,117,121,0.25)'
+    ];
+    var i = parseInt(Math.random() * 1024);
+    $('.haha-entry-list .entry').each(function(){
+        i = (i + 1) % rgba.length;
+        $(this).css('background',rgba[i]);
+    });
+});
+</script>
+{% include comment_plugin.html %}

@@ -1,11 +1,5 @@
 ---
-layout: frame
-cur_menu: index
+layout: random_hahas
+cur_category: haha
+cur_menu: hahas
 ---
-Welcome to here.
-
-[![Weibo](http://t.qq.com/favicon.ico)](http://t.qq.com/nofree)
-[![Github](http://github.com/favicon.ico)](http://github.com/nofree5th)
-
-    QQ: 307831078
-    Email: nofree5th@qq.com

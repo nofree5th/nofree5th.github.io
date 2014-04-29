@@ -1,11 +1,7 @@
-- id: index
-  name: NOFREE
-  url: 
-
 - id: blogs
   name: 信手涂鸦
   url: blogs.html
 
 - id: hahas
   name: 笑口常开
-  url: hahas.html
+  url: 
