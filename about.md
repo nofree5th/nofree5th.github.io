@@ -1,6 +1,6 @@
 ---
 layout: frame
-cur_menu: index
+cur_menu: about
 ---
 Welcome to here.
 
