@@ -3,7 +3,7 @@ layout: frame
 ---
 <div class="haha-entry-list">
 {% for entry in site.categories[page.cur_category] %}
-    <div class="entry">
+    <div class="entry clearfix">
         <div><span class="entry-date">{{ entry.date | date:"%Y-%m-%d"}}</span> &raquo; <span class="entry-title">{{ entry.title }}</span></div>
         <div class="entry-content">{{ entry.content }}</div>
     </div>
@@ -15,6 +15,7 @@ layout: frame
     padding: 10px;
     margin: 10px;
     border-radius: 4px;
+    float:left;
 }
 .haha-entry-list .entry img {
     width: 100%; 
@@ -24,10 +25,28 @@ layout: frame
 <script>
 $(function(){
     var $container = $(".haha-entry-list");
-    $container.masonry({
-         itemSelector: '.entry'
-        });
-   var rgba = [
+    // masonry after all img loaded, else img height will calc bad in chrome:(
+    var $imgs = $container.find("img");
+    var imgCount = $imgs.length;
+    function tryMasonry() {
+        if (imgCount == 0) {
+            $container.masonry({
+               itemSelector: '.entry'
+            });
+        }
+        --imgCount;
+    }
+    $imgs.each(function(){
+        if (this.complete)
+            tryMasonry();
+    });
+    if (imgCount == 0) {
+        tryMasonry();
+    } else {
+        $imgs.load(tryMasonry);
+    }
+    window.setInterval(tryMasonry,2500);
+    var rgba = [
         'rgba(251,34,240,0.25)'
         ,'rgba(214,17,21,0.25)'
         ,'rgba(14,251,252,0.25)'
