@@ -2,7 +2,7 @@
 layout: frame
 cur_menu: about
 ---
-Welcome to here.
+Welcome to here. Here we `Go`.
 
 [![Weibo](http://t.qq.com/favicon.ico)](http://t.qq.com/nofree)
 [![Github](http://github.com/favicon.ico)](http://github.com/nofree5th)

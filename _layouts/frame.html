@@ -17,7 +17,7 @@
 <body>
   <div class="container">
     <nav id="main-menu">
-      <a class="menu-magic navbar-brand" href=""><span class="glyphicon glyphicon-eye-open"></span></a>
+      <a class="menu-magic" href=""><span class="glyphicon glyphicon-eye-open"></span></a>
       <div class="navbar-inverse clearfix" style="float:left">
         <ul class="nav navbar-nav">
       {% for menu in site.data.menus %}
@@ -36,12 +36,16 @@
   <script>
     $(function(){
         function inTop() {
-          return ($(window).scrollTop() < 10);
+          return ($(window).scrollTop() < 5);
         }
+        var SHOWING = 1;
+        var HIDING = 2;
+        var type = SHOWING;
         function showMenu() {
           var $navbar = $("#main-menu ul.nav");
-          if (!$navbar.is(":visible")) {
-            $navbar.show();
+          if (type != SHOWING) {
+            type = SHOWING;
+            $navbar.stop().animate({height:"toggle",width:"toggle",opacity:"toggle"});
             $("#main-menu a.menu-magic span.glyphicon")
               .removeClass("glyphicon-eye-close")
               .addClass("glyphicon-eye-open");
@@ -49,8 +53,9 @@
         }
         function hideMenu() {
           var $navbar = $("#main-menu ul.nav");
-          if ($navbar.is(":visible")) {
-            $navbar.hide();
+          if (type != HIDING) {
+            type = HIDING;
+            $navbar.stop().animate({height:"toggle",width:"toggle",opacity:"toggle"});
             $("#main-menu a.menu-magic span.glyphicon")
               .removeClass("glyphicon-eye-open")
               .addClass("glyphicon-eye-close");
