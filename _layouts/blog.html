@@ -10,10 +10,10 @@ cur_menu: blogs
 </div>
 <script>
 $(function(){
-        $(".blog-entry a").each(function(){
-                var $a = $(this);
-                $a.append('<span class="glyphicon glyphicon-share-alt"></span>').attr("target","_blank");
-            });
+  $(".blog-entry a").each(function(){
+          var $a = $(this);
+          $a.append('<span class="glyphicon glyphicon-share-alt"></span>').attr("target","_blank");
+      });
 });
 </script>
 {% include comment_plugin.html %}

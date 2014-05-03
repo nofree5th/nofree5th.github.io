@@ -5,3 +5,8 @@
 - id: hahas
   name: 笑口常开
   url: 
+
+- id: about
+  name: 关于
+  url: about.html
+

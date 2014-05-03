@@ -1,32 +1,44 @@
 body {
-    background-color: #e8e8e8;
-    font-family: "微软雅黑","Arial","Helvetica","sans-serif";
+  background-color: #e8e8e8;
+  font-family: "微软雅黑","Arial","Helvetica","sans-serif";
 }
 #content {
-    margin-top: 70px;
-    margin-bottom: 50px;
-    background-color: #fff;
-    min-height: 200px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  min-height: 200px;
+}
+
+#main-menu {
+  position: fixed;
+  top: 5px;
+  z-index: 2014;
+}
+#main-menu .menu-magic {
+  display: block;
+  float: left;
+  background-color: transparent;
+  color: red;
 }
 
 .blog-entry-list .entry-title,
 .blog-entry .entry-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 6px;
-    margin-left: 6px;
-    text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  text-align: center;
 }
 
 .haha-entry-list .entry-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .entry-date {
-    text-align: center;
-    color: #999;
-    margin-bottom: 20px;
+  text-align: center;
+  color: #999;
+  margin-bottom: 20px;
 }
 .see-more {
-    margin-left: 10px;
+  margin-left: 10px;
 }
