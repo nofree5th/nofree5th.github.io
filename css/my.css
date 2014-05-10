@@ -15,8 +15,10 @@ body {
   z-index: 2014;
 }
 #main-menu .menu-magic {
+  z-index: 2015;
   position: relative;
   top: -0.5em;
+  left: 0.5em;
   display: block;
   float: left;
   background-color: transparent;

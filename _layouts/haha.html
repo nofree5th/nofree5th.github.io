@@ -1,0 +1,11 @@
+---
+layout: frame
+cur_menu: hahas
+---
+<div class="blog-entry">
+    <div class="entry-title">{{ page.title }}</div>
+    <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
+    {{ content }}
+</div>
+{% include comment_plugin.html %}
+

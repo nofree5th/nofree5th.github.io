@@ -28,7 +28,7 @@ category: blog
 
 - 配置环境
 
-  git安装请自行百度, 启动git bash，编辑**~/.bashrc**文件，增加：
+  git安装及使用([git使用简易指南](http://www.bootcss.com/p/git-guide/))请自行百度, 启动git bash，编辑**~/.bashrc**文件，增加：
   > export LANG=zh_CN.UTF-8
 
   > export LC_ALL=zh_CN.UTF-8

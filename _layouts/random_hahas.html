@@ -4,7 +4,7 @@ layout: frame
 <div class="haha-entry-list">
 {% for entry in site.categories[page.cur_category] %}
     <div class="entry clearfix">
-        <div><span class="entry-date">{{ entry.date | date:"%Y-%m-%d"}}</span> &raquo; <span class="entry-title">{{ entry.title }}</span></div>
+        <div><span class="entry-date">{{ entry.date | date:"%Y-%m-%d"}}</span> &raquo; <a class="entry-title" href="{{ entry.url }}">{{ entry.title }}</a></div>
         <div class="entry-content">{{ entry.content }}</div>
     </div>
 {% endfor %}
