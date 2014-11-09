@@ -100,22 +100,33 @@ Go就是golang，很现代的一门语言。相信看到这篇文章的读者，
 
 当然slice的定义也可以如下：
 >struct slice_struct { // level 1
+
 >  int len;
+
 >  int cap;
+
 >  T* elems; // elems 指向level2
+
 >};
+
 >struct slice { // level 0
+
 >  slice_struct* slice_impl;
+
 >}
 这时，slice=0级复制+1级复制+1级引用
 然而0级是否存在或者存在更多这样的级别都是可能却不必要的，因此这里只讨论必要的层级。后同。
  
 ###3.4. array呢？
- >struct array { // level 0
- >  T* elems; // elems指向level1
- >  int len;
- >  ...
- >};
+>struct array { // level 0
+
+>  T* elems; // elems指向level1
+
+>  int len;
+
+>  ...
+
+>};
 
 很明显，array是一个纯粹的值语义，因为array在c++层次至少是1级别的变量，它的赋值或传参由go进行了深度复制。
 
@@ -124,13 +135,19 @@ Go就是golang，很现代的一门语言。相信看到这篇文章的读者，
 看出问题来了吗？效率低下！那么在go没有const修饰的情况下，似乎用array传参的情况应该尽量避免。（如果有const可以修饰，那么go编译器可以优化为传指针。在目前没有const修饰的前提下，传入指针是没法正常工作的，因为go支持修改数组元素）
 
 ###3.5. map？
- >struct map_struct { // level 1
- >   int size;
- >   T* hash_bucket; // hash_bucket指向level2
- >};
- >struct map { // level 0
- >  map_struct* map_impl;
- >};
+>struct map_struct { // level 1
+
+>   int size;
+
+>   T* hash_bucket; // hash_bucket指向level2
+
+>};
+
+>struct map { // level 0
+
+>  map_struct* map_impl;
+
+>};
 
 map=0级别复制
 
