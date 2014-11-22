@@ -11,81 +11,38 @@
   <link rel="shortcut icon" href="{{ site.baseurl }}favicon.ico">
   <title>{% if page.title %}{{ page.title }}_{% endif %}{{ site.title }}</title>
 
-  <link rel="stylesheet" href="{{ site.baseurl }}css/bootstrap-3.0.3.min.css">
+  <!-- link rel="stylesheet" href="{{ site.baseurl }}css/bootstrap-3.0.3.min.css" -->
+  <link rel="stylesheet" href="{{ site.baseurl }}css/reset.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}css/my.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}css/markdown.css">
 </head>
 <body>
-  <div class="container">
-    <nav id="main-menu">
-      <a class="menu-magic" href=""><span class="glyphicon glyphicon-eye-open"></span></a>
-      <div class="navbar-inverse clearfix" style="float:left">
-        <ul class="nav navbar-nav">
-      {% for menu in site.data.menus %}
-          <li{% if menu.id == page.cur_menu %} class="active" {% endif %}><a href="{{ site.baseurl }}{{ menu.url }}"><span>{{ menu.name }}</span></a></li>
-      {% endfor %}
-        </ul>
-      </div>
-    </nav>
-   </div>
-  <script src="{{ site.baseurl }}js/jquery-1.10.2.min.js"></script>
-  <script src="{{ site.baseurl }}js/respond.js"></script>
-  <div class="container" id="content">
+<div id="wrapper">
+  <div id="header">
+    <a class="header-magic" href="" show-text='^_^' hide-text=':)'></a>
+    <div class="clearfix" style="float:left">
+      <ul>
+    {% for menu in site.data.menus %}
+        <li{% if menu.id == page.cur_menu %} class="active" {% endif %}><a href="{{ site.baseurl }}{{ menu.url }}"><span>{{ menu.name }}</span></a></li>
+    {% endfor %}
+      </ul>
+    </div>
+  </div><!-- end menu --!>
+  <div id="body" class='md'>
       {{ content }}
   </div>
-  <footer class="container text-center">Copyright &copy; 2014 - WhoCares</footer>
-  <script>
-    $(function(){
-        function inTop() {
-          return ($(window).scrollTop() < 5);
-        }
-        var SHOWING = 1;
-        var HIDING = 2;
-        var type = SHOWING;
-        function showMenu() {
-          var $navbar = $("#main-menu ul.nav");
-          if (type != SHOWING) {
-            type = SHOWING;
-            $navbar.stop().animate({height:"toggle",width:"toggle",opacity:"toggle"});
-            $("#main-menu a.menu-magic span.glyphicon")
-              .removeClass("glyphicon-eye-close")
-              .addClass("glyphicon-eye-open");
-          }
-        }
-        function hideMenu() {
-          var $navbar = $("#main-menu ul.nav");
-          if (type != HIDING) {
-            type = HIDING;
-            $navbar.stop().animate({height:"toggle",width:"toggle",opacity:"toggle"});
-            $("#main-menu a.menu-magic span.glyphicon")
-              .removeClass("glyphicon-eye-open")
-              .addClass("glyphicon-eye-close");
-          }
-        }
-        $(window).scroll(function(){
-            if (!inTop()) {
-              hideMenu();
-            } else {
-              showMenu();
-            }
-          });
-        $("#main-menu").hover(showMenu, function() {
-              if (!inTop()) {
-                hideMenu();
-              }
-            });
-        $("#main-menu a.menu-magic").click(function(e){
-               e.preventDefault();
-               $("html,body").animate({scrollTop: 0});
-            });
-      });
-  </script>
+  <div class="text-center">Copyright &copy; 2014 - WhoCares</div>
+</div>
+<script src="{{ site.baseurl }}js/jquery-1.10.2.min.js"></script>
+<script src="{{ site.baseurl }}js/respond.js"></script>
+<script src="{{ site.baseurl }}js/my.js"></script>
 {% if site.host != "0.0.0.0" %}
-  <!-- begin baidu stat -->
-  <script type="text/javascript">
+<!-- begin baidu stat -->
+<script type="text/javascript">
   var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
   document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd6c5818804988db84621ed388c637338' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <!-- end baidu stat -->
+</script>
+<!-- end baidu stat -->
 {% endif %}
 </body>
 </html>

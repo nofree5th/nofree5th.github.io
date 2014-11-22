@@ -1,44 +1,99 @@
-body {
-  background-color: #e8e8e8;
-  font-family: "微软雅黑","Arial","Helvetica","sans-serif";
+/* comm */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
-#content {
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+.glyphicon:empty {
+  width: 1em;
+}
+/* layout */
+body {
+  font-family: "Microsoft Yahei","微软雅黑","Arial","Helvetica","sans-serif";
+  /*background-color: #d1d1d1;*/
+}
+#wrapper {
+  /*background-color: #e8e8e8;*/
+  width: 960px;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 8px;
+}
+#body {
   margin-top: 70px;
   margin-bottom: 50px;
-  background-color: #fff;
   min-height: 200px;
 }
-
-#main-menu {
+#header {
   position: fixed;
   top: 1em;
   z-index: 2014;
+  background-color: #333;
+  color: white;
+  border-radius: 3px;
 }
-#main-menu .menu-magic {
+#body {
+  margin-top: 50px;
+}
+
+#header .header-magic {
   z-index: 2015;
-  position: relative;
+  position: absolute;
   top: -0.5em;
-  left: 0.5em;
+  left: -0.5em;
   display: block;
   float: left;
   background-color: transparent;
   color: red;
+  font-weight: bold;
+}
+
+#header ul li {
+  float: left;
+  padding: 10px;
+}
+#header ul li a {
+  color: #999;
+}
+#header ul li.active {
+  background-color: black;
+}
+#header ul li.active a {
+  color: #fff;
 }
 
 .blog-entry-list .entry-title,
 .blog-entry .entry-title {
   font-size: 1.5em;
-  font-weight: bold;
   margin-bottom: 6px;
   margin-left: 6px;
   text-align: center;
+  color: #2C3E50;
 }
 .blog-entry .entry-title {
-  font-size: 2.5em;
+  font-size: 2.0em;
 }
 
 .haha-entry-list .entry-title {
-  font-weight: bold;
 }
 
 .entry-date {
@@ -49,3 +104,5 @@ body {
 .see-more {
   margin-left: 10px;
 }
+
+/* markdown style */
