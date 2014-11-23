@@ -14,6 +14,10 @@ $(function(){
           var $a = $(this);
           $a.append('<span class="glyphicon glyphicon-share-alt"></span>').attr("target","_blank");
       });
+  if (prettyPrint) {
+    $('pre').addClass('prettyprint linenums'); 
+    prettyPrint();
+  }
 });
 </script>
 {% include comment_plugin.html %}

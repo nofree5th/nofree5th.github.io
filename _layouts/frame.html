@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}css/reset.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}css/markdown.css">
   <link rel="stylesheet" href="{{ site.baseurl }}css/my.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}css/prettify.css">
 </head>
 <body>
 <div id="wrapper">
@@ -28,14 +29,15 @@
       </ul>
     </div>
   </div><!-- end menu --!>
+<script src="{{ site.baseurl }}js/jquery-1.10.2.min.js"></script>
   <div id="body" class='md'>
       {{ content }}
   </div>
   <div id="footer" class="text-center">Copyright &copy; 2014 - WhoCares</div>
 </div>
-<script src="{{ site.baseurl }}js/jquery-1.10.2.min.js"></script>
 <script src="{{ site.baseurl }}js/respond.js"></script>
 <script src="{{ site.baseurl }}js/my.js"></script>
+<script src="{{ site.baseurl }}js/prettify.js"></script>
 {% if site.host != "0.0.0.0" %}
 <!-- begin baidu stat -->
 <script type="text/javascript">

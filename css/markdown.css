@@ -6,22 +6,34 @@
 }
 .md blockquote {
   color:#666666;
-  padding-left: 10px;
-  margin-left: 20px;
+  border-left: 10px solid #D6DBDF;
+  padding-left: 15px 10px;;
+  background: none repeat scroll 0 0 rgba(102,128,153,.05);
+}
+.md pre {
+  background-color: #000;
+  border-left: 10px solid #6CE26C;
 }
 .md pre code {
   display: block;
-  border-left: 5px solid #6CE26C;
 }
 .md code {
   padding-left: 10px;
-  background-color: #D6DBDF;
   word-wrap:break-word;  
 }
 
-.md li {
-  list-style-type: disc;
+.md ul, .md ol {
+  margin-left: 25px;
 }
+.md ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+.md ol li {
+  list-style: decimal;
+  margin-bottom: 5px;
+}
+
 
 .md h1 {
   color: #000000;
@@ -46,9 +58,8 @@
   font-size: 14px;
 }
 .md hr {
-  height: 1px;
-  color: #CCCCCC;
-  background-color: #CCCCCC;
+  border: none;
+  border-top: 1px dashed #BBB;
 }
 .md table {
   width: 100%;

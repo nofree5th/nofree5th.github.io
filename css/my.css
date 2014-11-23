@@ -30,10 +30,11 @@
 /* layout */
 body {
   font-family: "Microsoft Yahei","微软雅黑","Arial","Helvetica","sans-serif";
+  background-color: #e8e8e8;
   /*background-color: #d1d1d1;*/
 }
 #wrapper {
-  /*background-color: #e8e8e8;*/
+  background-color: white;
   width: 960px;
   margin: 15px auto;
   padding: 15px;
@@ -88,7 +89,6 @@ body {
     color: #ddd;
 }
 
-/*
 .blog-entry-list .entry-title,
 .blog-entry .entry-title {
   font-size: 1.5em;
@@ -112,6 +112,3 @@ body {
 .see-more {
   margin-left: 10px;
 }
-    */
-
-/* markdown style */
