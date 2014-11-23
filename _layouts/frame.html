@@ -13,13 +13,13 @@
 
   <!-- link rel="stylesheet" href="{{ site.baseurl }}css/bootstrap-3.0.3.min.css" -->
   <link rel="stylesheet" href="{{ site.baseurl }}css/reset.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}css/my.css">
   <link rel="stylesheet" href="{{ site.baseurl }}css/markdown.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}css/my.css">
 </head>
 <body>
 <div id="wrapper">
   <div id="header">
-    <a class="header-magic" href="" show-text='^_^' hide-text=':)'></a>
+    <a class="header-magic" href="" show-text='$' hide-text=':)'></a>
     <div class="clearfix" style="float:left">
       <ul>
     {% for menu in site.data.menus %}
@@ -31,7 +31,7 @@
   <div id="body" class='md'>
       {{ content }}
   </div>
-  <div class="text-center">Copyright &copy; 2014 - WhoCares</div>
+  <div id="footer" class="text-center">Copyright &copy; 2014 - WhoCares</div>
 </div>
 <script src="{{ site.baseurl }}js/jquery-1.10.2.min.js"></script>
 <script src="{{ site.baseurl }}js/respond.js"></script>

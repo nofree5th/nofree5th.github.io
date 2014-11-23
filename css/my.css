@@ -26,6 +26,7 @@
 .glyphicon:empty {
   width: 1em;
 }
+
 /* layout */
 body {
   font-family: "Microsoft Yahei","微软雅黑","Arial","Helvetica","sans-serif";
@@ -58,8 +59,8 @@ body {
 #header .header-magic {
   z-index: 2015;
   position: absolute;
-  top: -0.5em;
-  left: -0.5em;
+  top: -0.0em;
+  left: -0.0em;
   display: block;
   float: left;
   background-color: transparent;
@@ -81,6 +82,13 @@ body {
   color: #fff;
 }
 
+#footer {
+    text-align: center;
+    background-color: #555;
+    color: #ddd;
+}
+
+/*
 .blog-entry-list .entry-title,
 .blog-entry .entry-title {
   font-size: 1.5em;
@@ -104,5 +112,6 @@ body {
 .see-more {
   margin-left: 10px;
 }
+    */
 
 /* markdown style */
