@@ -31,18 +31,16 @@
 body {
   font-family: "Microsoft Yahei","微软雅黑","Arial","Helvetica","sans-serif";
   background-color: #e8e8e8;
-  /*background-color: #d1d1d1;*/
 }
 #wrapper {
   background-color: white;
   width: 960px;
   margin: 15px auto;
-  padding: 15px;
   border-radius: 8px;
+  position: relative;
 }
 #body {
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin: 70px 20px 50px 20px;
   min-height: 200px;
 }
 #header {
@@ -52,16 +50,12 @@ body {
   background-color: #333;
   color: white;
   border-radius: 3px;
-}
-#body {
-  margin-top: 50px;
+  border-top: 1px solid yellow;
 }
 
 #header .header-magic {
   z-index: 2015;
   position: absolute;
-  top: -0.0em;
-  left: -0.0em;
   display: block;
   float: left;
   background-color: transparent;
@@ -99,6 +93,7 @@ body {
 }
 .blog-entry .entry-title {
   font-size: 2.0em;
+  font-weight: bold;
 }
 
 .haha-entry-list .entry-title {

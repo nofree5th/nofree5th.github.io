@@ -1,10 +1,10 @@
 - id: blogs
   name: 信手涂鸦
-  url: blogs.html
+  url: 
 
 - id: hahas
   name: 笑口常开
-  url: 
+  url: hahas.html
 
 - id: about
   name: 关于

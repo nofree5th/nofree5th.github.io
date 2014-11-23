@@ -89,13 +89,9 @@ Go就是golang，很现代的一门语言。相信看到这篇文章的读者，
 
 ```C++
 struct slice { // level 0
-
   int len;
-
   int cap;
-
   T* elems; // elems指向level 1
-
 };  // 0级内存大小为int+int+(T*)，1级的内存大小为T（elems指向）
 ```
  从前面引用的广义定义来看，slice是引用，因为赋值或传参后新的变量可以修改原变量的内容（elems），而len和cap则互相独立，因此slice这个引用如果看成上面的结构体，那么传参和赋值实际上是0级变量的值语义。

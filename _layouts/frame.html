@@ -16,12 +16,13 @@
   <link rel="stylesheet" href="{{ site.baseurl }}css/markdown.css">
   <link rel="stylesheet" href="{{ site.baseurl }}css/my.css">
   <link rel="stylesheet" href="{{ site.baseurl }}css/prettify.css">
+  <script src="{{ site.baseurl }}js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
   <div id="header">
     <a class="header-magic" href="" show-text='$' hide-text=':)'></a>
-    <div class="clearfix" style="float:left">
+    <div class="clearfix">
       <ul>
     {% for menu in site.data.menus %}
         <li{% if menu.id == page.cur_menu %} class="active" {% endif %}><a href="{{ site.baseurl }}{{ menu.url }}"><span>{{ menu.name }}</span></a></li>
@@ -29,7 +30,6 @@
       </ul>
     </div>
   </div><!-- end menu --!>
-<script src="{{ site.baseurl }}js/jquery-1.10.2.min.js"></script>
   <div id="body" class='md'>
       {{ content }}
   </div>

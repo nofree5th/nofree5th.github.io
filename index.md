@@ -1,5 +1,5 @@
 ---
-layout: random_hahas
-cur_category: haha
-cur_menu: hahas
+layout: blogs
+cur_category: blog
+cur_menu: blogs
 ---
