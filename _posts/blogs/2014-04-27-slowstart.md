@@ -5,6 +5,7 @@ category: blog
 ---
 
 ##搭建Jekyll环境
+
 - 安装ruby
 
   [ruby 1.9.3](http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p545.exe?direct),ruby 1.9.2/2.0.0都有一堆坑:)

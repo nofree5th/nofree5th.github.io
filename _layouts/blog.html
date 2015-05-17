@@ -5,12 +5,17 @@ cur_menu: blogs
 
 <div class="blog-entry">
     <div class="entry-title">{{ page.title }}</div>
-    <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
+    <div class="entry-subtitle">
+        <a class="entry-author" href="/about.html">@nofree</a>
+        <span class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</span>
+    </div>
+    <div class="content">
     {{ content }}
+    </div>
 </div>
 <script>
 $(function(){
-  $(".blog-entry a").each(function(){
+  $(".blog-entry div.content a").each(function(){
           var $a = $(this);
           $a.append('<span class="glyphicon glyphicon-share-alt"></span>').attr("target","_blank");
       });

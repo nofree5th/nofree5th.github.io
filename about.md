@@ -2,9 +2,9 @@
 layout: frame
 cur_menu: about
 ---
-Welcome to here. Here we `Go`.
 
 [![Weibo](http://t.qq.com/favicon.ico)](http://t.qq.com/nofree)
+[![无聊之作](http://user.qzone.qq.com/favicon.ico)](http://user.qzone.qq.com/307831078/2)
 [![Github](http://github.com/favicon.ico)](http://github.com/nofree5th)
 
 - ID: `nofree`
