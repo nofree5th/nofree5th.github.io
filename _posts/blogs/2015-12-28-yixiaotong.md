@@ -1,7 +1,6 @@
 ---
-layout: frame
+layout: simple_frame
 title: 翼校通寒假维系活动
-category: hide
 ---
 
 # 翼校通寒假维系活动
