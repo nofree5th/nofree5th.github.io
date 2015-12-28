@@ -20,6 +20,7 @@
 </head>
 <body>
 <div id="wrapper">
+{% if page.cur_menu != "" %}
   <div id="header">
     <a class="header-magic" href="" show-text='' hide-text='@'></a>
     <div class="clearfix">
@@ -30,6 +31,7 @@
       </ul>
     </div>
   </div><!-- end menu --!>
+{% endif %}
   <div id="body" class='md'>
       {{ content }}
   </div>
