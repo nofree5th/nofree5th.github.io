@@ -20,7 +20,7 @@
 </head>
 <body>
 <div id="wrapper">
-{% if page.cur_menu != "" %}
+{% if page.cur_menu != "hide" %}
   <div id="header">
     <a class="header-magic" href="" show-text='' hide-text='@'></a>
     <div class="clearfix">
@@ -35,7 +35,9 @@
   <div id="body" class='md'>
       {{ content }}
   </div>
+{% if page.cur_menu != "hide" %}  
   <div id="footer" class="text-center">Copyright &copy; 2014 - WhoCares</div>
+{% endif %}  
 </div>
 <script src="{{ site.baseurl }}js/respond.js"></script>
 <script src="{{ site.baseurl }}js/my.js"></script>

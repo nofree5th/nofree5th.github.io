@@ -1,7 +1,7 @@
 ---
 layout: frame
 title: 翼校通寒假维系活动
-category: 
+category: hide
 ---
 
 # 翼校通寒假维系活动
