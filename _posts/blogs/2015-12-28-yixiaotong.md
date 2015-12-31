@@ -33,4 +33,4 @@ title: 翼校通寒假维系活动
 ![翼校通下载二维码][1]
   [1]: http://nofree5th.github.io/img/yi_xiao_tong.png
 
-[翼校通活动参与指引](/2015/12/28/yixiaotong/)
+[翼校通活动参与指引](/2015/12/28/yixiaotong_intro/)
