@@ -3,14 +3,6 @@ layout: frame
 cur_menu: about
 ---
 
-[![Weibo](http://t.qq.com/favicon.ico)](http://t.qq.com/nofree)
-[![无聊之作](http://user.qzone.qq.com/favicon.ico)](http://user.qzone.qq.com/307831078/2)
-[![Github](http://github.com/favicon.ico)](http://github.com/nofree5th)
-
-- ID: `nofree`
-- QQ: `307831078`
-- Email: `nofree5th@qq.com`
-
 > 幼小未知学，游玩以为乐，兴至好玩弹珠，没由来惊煞飞鸟；
 
 > 初中似有悟，学而偶有得，父母谋生在外，我辈百业俱荒疏；
